@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PersonaAdsMobileAndroidExamples"
         tools:targetApi="31">
+
+        <!--    Sample apiKey: XXX_api_key_2_XXX-->
+        <meta-data
+            android:name="io.persona3.android.pms.ads.API_KEY"
+            android:value="XXX_api_key_2_XXX"/>
+        <meta-data
+            android:name="io.persona3.android.pms.ads.ENVIRONMENT"
+            android:value="development"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
