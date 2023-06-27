@@ -78,8 +78,6 @@ The first step toward displaying a banner is to place AdView in the layout for t
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:adUnitId="4582921a-a66d-4e3c-b717-261b315371a7"/>
 ```
 You will find the adUnitId in Persona UI.

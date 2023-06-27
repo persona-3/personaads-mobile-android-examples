@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">PersonaAdsMobileAndroidExamples</string>
+    <string name="game_title">Eternal Legends</string>
+    <string name="game_icon">Eternal Legends</string>
+    <string name="game_description">Embark on an extraordinary adventure in the immersive world of \'Mystic Quest.\'
+    \nExplore breathtaking landscapes, encounter captivating characters, and unravel the secrets of a long-lost civilization.
+    \nWith stunning graphics and an epic storyline, this action-packed role-playing game will test your strategic skills and challenge your bravery.
+    \nAre you ready to embark on a legendary quest and become a true hero? Join the adventure and forge your destiny in \'Mystic Quest\'!
+    \nAre you ready to embark on a legendary quest and become a true hero?
+</string>
+
+    <string name="play_button_text">Play Now</string>
 </resources>
