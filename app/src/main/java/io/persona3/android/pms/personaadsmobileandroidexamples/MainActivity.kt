@@ -2,45 +2,20 @@ package io.persona3.android.pms.personaadsmobileandroidexamples
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import io.persona3.android.pms.personaadsmobileandroidexamples.ui.theme.PersonaAdsMobileAndroidExamplesTheme
+import io.persona3.android.pms.ads.AdRequest
+import io.persona3.android.pms.ads.AdView
+import io.persona3.android.pms.ads.PersonaAdSDK
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            PersonaAdsMobileAndroidExamplesTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
-        }
-    }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+        setContentView(R.layout.activity_main)
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    PersonaAdsMobileAndroidExamplesTheme {
-        Greeting("Android")
+        PersonaAdSDK.initialize(this)
+
+        val mAdView = findViewById<AdView>(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
     }
 }
