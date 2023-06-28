@@ -12,7 +12,7 @@ Register your app in the Persona platform by completing the following steps:
 
 ```
 dependencies {
-  implementation ('io.persona3:mobile-ad-sdk:0.0.3')
+  implementation("io.persona3.android.pms:mobile-ad-sdk:0.0.1")
 }
 ```
 
