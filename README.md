@@ -12,7 +12,7 @@ Register your app in the Persona platform by completing the following steps:
 
 ```
 dependencies {
-  implementation("io.persona3.android.pms:mobile-ad-sdk:0.0.1")
+  implementation("io.persona3.android.pms:mobile-ad-sdk:0.0.2")
 }
 ```
 
@@ -134,5 +134,22 @@ public class MainActivity extends ComponentActivity {
    }
 }
 ```
+## Troubleshooting Points
 
+1. **Use physical devices:** It is recommended to use physical devices for testing the integration instead of emulators. Emulators may sometimes have issues related to caching or network connectivity.
 
+2. **Resetting emulators:** If you are using emulators and facing issues, you can try wiping the data and cold booting the emulator. This can help resolve some problems related to cached data or system state.
+
+3. **Check internet connectivity:** Ensure that your emulator or physical device has a stable internet connection. If the device is unable to connect to the internet, it may cause issues with ad loading. You can try restarting the device or connecting to a different network.
+
+4. **Verify API key and adUnitId:** Double-check that you have correctly added your API key and adUnitId in the `AndroidManifest.xml` file. Make sure the values are accurate and match the ones provided by Persona's publisher account.
+
+5. **Check initialization:** Ensure that you have properly initialized the Persona Mobile Ads SDK in your app's `onCreate()` method or at the appropriate place in your app's lifecycle. Confirm that you are calling the `PersonaAdSDK.initialize()` method with the correct context.
+
+6. **Verify layout configuration:** Check your XML layout file where the `AdView` is placed. Make sure the `AdView` has the correct ID assigned and the `app:adUnitId` attribute is set to the appropriate adUnitId provided by Persona.
+
+7. **Test on multiple devices:** Test your app integration on multiple devices with different screen sizes, resolutions, and Android versions. This can help identify any device-specific issues or layout problems that may arise.
+
+8. **Check logs for errors:** Monitor the logs of your app while testing the integration. Look for any error messages or exceptions related to the Persona Mobile Ads SDK. These logs can provide valuable insights into the cause of the issue.
+
+9. **Contact Persona support:** If you have followed all the troubleshooting steps and are still experiencing issues, reach out to Persona's support team for further assistance. They can provide specific guidance based on your integration and help resolve any technical difficulties you may be facing.
