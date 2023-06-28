@@ -4,7 +4,7 @@ Persona Mobile Ads SDK enables android app developers to display digital adverti
 ## Set up your app in your Persona publisher's account
 Register your app in the Persona platform by completing the following steps:
 1. Sign in or Sign up as a publisher on the Persona account.
-2. Register your app and create ad units for the registered apps. You will get an API key which you will use in the later steps.
+2. Register your app and create ad units for the registered apps. You will get an API key which you will use in the later steps. You will also get adUnitId for each adUnit that you create.
 
 ## Configure your app
 1. Add the dependencies for the Persona Mobile Ads SDK to your module's app-level Gradle file, normally **app/build.gradle**
