@@ -18,7 +18,7 @@
         android:contentDescription="@string/game_icon"
         android:padding="10dp"/>
 
-<!--    Sample adUnitId: 4582921a-a66d-4e3c-b717-261b315371a7-->
+    <!--    Sample adUnitId: 4582921a-a66d-4e3c-b717-261b315371a7-->
     <io.persona3.android.pms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"

@@ -12,12 +12,12 @@ Register your app in the Persona platform by completing the following steps:
 
 ```
 dependencies {
-  implementation("io.persona3.android.pms:mobile-ad-sdk:0.0.2")
+  implementation("io.persona3.android.pms:mobile-ad-sdk:0.0.3")
 }
 ```
 
-2. Add your API key and the environment(development or production) to your app's **AndroidManifest.xml** file. To do so, add a **\<meta-data\>** tag with **android:name="io.persona3.android.pms.ads.API_KEY"**.
-   You will find your api key in the Persona UI. Use environment as **development** while integrating the SDK, change it to **production** before deploying it to live url.
+2. Add your API key and the environment(staging or production) to your app's **AndroidManifest.xml** file. To do so, add a **\<meta-data\>** tag with **android:name="io.persona3.android.pms.ads.API_KEY"**.
+   You will find your api key in the Persona UI. Use environment as **staging** while integrating the SDK, change it to **production** before deploying it to live url.
    For example-
 ```
  <manifest>
@@ -28,7 +28,7 @@ dependencies {
             android:value="XXX_api_key_2_XXX"/>
         <meta-data
             android:name="io.persona3.android.pms.ads.ENVIRONMENT"
-            android:value="development"/>
+            android:value="staging"/>
     </application>
  </manifest>
 ```
