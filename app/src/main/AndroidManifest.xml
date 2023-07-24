@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -20,7 +19,7 @@
             android:value="XXX_api_key_2_XXX" />
         <meta-data
             android:name="io.persona3.android.pms.ads.ENVIRONMENT"
-            android:value="development" />
+            android:value="staging" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
