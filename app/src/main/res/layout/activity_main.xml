@@ -26,7 +26,7 @@
         app:layout_constraintTop_toBottomOf="@+id/game_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:adUnitId="4582921a-a66d-4e3c-b717-261b315371a7"/>
+        app:adUnitId="a6280861-fb15-466d-8a0d-9e82f0e4ffa0"/>
 
     <TextView
         android:id="@+id/game_title"

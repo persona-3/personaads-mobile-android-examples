@@ -12,7 +12,7 @@ Register your app in the Persona platform by completing the following steps:
 
 ```
 dependencies {
-  implementation("io.persona3.android.pms:mobile-ad-sdk:0.0.3")
+  implementation("io.persona3.android.pms:mobile-ad-sdk:0.0.6")
 }
 ```
 
@@ -61,7 +61,7 @@ public class MainActivity extends ComponentActivity {
    public void onCreate(@Nullable Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
 
-      PersonaAdSDK.Companion.initialize(this);
+       PersonaAdSDK.initialize(this);
    }
 }
 ```
@@ -73,12 +73,12 @@ The first step toward displaying a banner is to place AdView in the layout for t
 <br /><br />Here's an example that shows an activity's AdView:
 
 ```
-<!--    Sample adUnitId: 4582921a-a66d-4e3c-b717-261b315371a7-->
+<!--    Sample adUnitId: a6280861-fb15-466d-8a0d-9e82f0e4ffa0-->
     <io.persona3.android.pms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:adUnitId="4582921a-a66d-4e3c-b717-261b315371a7"/>
+        app:adUnitId="a6280861-fb15-466d-8a0d-9e82f0e4ffa0"/>
 ```
 You will find the adUnitId in Persona UI.
 
@@ -126,7 +126,7 @@ public class MainActivity extends ComponentActivity {
        
        setContentView(R.layout.activity_main);
 
-      PersonaAdSDK.Companion.initialize(this);
+       PersonaAdSDK.initialize(this);
 
        AdView adView = findViewById(R.id.adView);
        AdRequest adRequest = new AdRequest.Builder().build();
