@@ -14,8 +14,7 @@ public class MainActivityJava extends ComponentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        PersonaAdSDK.Companion.initialize(this);
+        PersonaAdSDK.initialize(this);
 
         AdView adView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
