@@ -21,7 +21,7 @@
     <!--    Sample adUnitId: 5470eef5-da8a-40d8-8e0f-a50882844770-->
     <io.persona3.android.pms.ads.AdView
         android:id="@+id/adView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/game_icon"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +48,6 @@
         app:layout_constraintTop_toBottomOf="@+id/game_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:text="@string/game_description"
         android:textSize="16sp"
