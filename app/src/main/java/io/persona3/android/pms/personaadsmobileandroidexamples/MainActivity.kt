@@ -16,6 +16,8 @@ class MainActivity : ComponentActivity() {
 
         val mAdView = findViewById<AdView>(R.id.adView)
         val adRequest = AdRequest.Builder().build()
+        mAdView.setUserEmail("test@gmail.com")
+        mAdView.setWalletAddress("xTestgfcthchhcdrdcd")
         mAdView.loadAd(adRequest)
     }
 }
